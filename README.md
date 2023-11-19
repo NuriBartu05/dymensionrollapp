@@ -18,14 +18,22 @@
 >Örnek ChatGpt prompt olarak ;
 
 ```
-ChatGpt ye ben bir NFT mint ile alakalı bir dapp oluşturacağım. NFT mint contract'ı için Solidity kullanacağım. Oluşturacağım dappde mint tuşuna basan herkes mintleyebilsin. Arzı ...... olsun. Benim evm ağımın Adı ..... , ChainId ....... , Sembol ......... , Rpc .......... ,. Bana bunun için ERC721 contract yaz.
+ChatGpt ye ben bir NFT mint ile alakalı bir dapp oluşturacağım. 
+NFT mint contract'ı için Solidity kullanacağım. 
+Oluşturacağım dappde mint tuşuna basan herkes mintleyebilsin. 
+Arzı ...... olsun. 
+Benim evm ağımın Adı ..... , 
+ChainId ....... , 
+Sembol ......... , 
+Rpc .......... ,. 
+Bana bunun için ERC721 contract yaz.
 ```
 
 >Bu şekilde contract oluşturuyoruz.
 
->`Önemli noktalar;`
+>Önemli noktalar;
 
->`https://remix.ethereum.org/ sitesini kullanarak contract oluşturuyorsanız. Solidity Compiler yaparken Advanced Configurations' tan EVM Versions kısmını Paris yapın.`
+>`https://remix.ethereum.org/' sitesini kullanarak contract oluşturuyorsanız. 'Solidity Compiler' yaparken `Advanced Configurations`' tan `EVM Versions` kısmını `Paris` yapın.`
 
 >Sonrasında aynı şekilde  https://remix.ethereum.org/ sitesinde `Solidity Compiler` kısmından `ABI`' yı kopyalayın. Ardından `/root/my-react-app/src` klasöründe `MyNftContractABI.json` oluşturun ve içeriğine `ABI`' yı yapıstırın.
 
