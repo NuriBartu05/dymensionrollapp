@@ -35,7 +35,8 @@ Bu şekilde contract oluşturuyoruz.
 
 >`https://remix.ethereum.org/` sitesini kullanarak contract oluşturuyorsanız. 'Solidity Compiler' yaparken `Advanced Configurations`' tan `EVM Versions` kısmını `Paris` yapın.
 
->Sonrasında aynı şekilde  https://remix.ethereum.org/ sitesinde `Solidity Compiler` kısmından `ABI`' yı kopyalayın. Ardından `/root/my-react-app/src` klasöründe `MyNftContractABI.json` oluşturun ve içeriğine `ABI`' yı yapıstırın.
+Sonrasında aynı şekilde;
+>https://remix.ethereum.org/ sitesinde `Solidity Compiler` kısmından `ABI`' yı kopyalayın. Ardından `/root/my-react-app/src` klasöründe `MyNftContractABI.json` oluşturun ve içeriğine `ABI`' yı yapıstırın.
 
 >Bunları tamamladıktan sonra ChatGpt' ye aynı şekilde bir dapp yaptığınızı Mint tuşunun olacağını söyleyin. Ona contract adresini ve `ABI` dosyasının nerede olduğunu belirtin ve `/root/my-react-app/src` içindeki `App.js` dosyasının içindeki yazıyı gönderin. O sizin için bir kod oluşturacak o kodu `App.js` dosyasının içindeki kod ile değiştirin. Bu işlemleri yaptıktan sonra tekrardan sitenizi kontrol edin `http://localhost:3000` e girdiğinizde mint nft tuşu olması ve çalışması gerekiyor. Kodda hata olduğunu fark ederseniz hata ile beraber GPT ye sorun. 
 
