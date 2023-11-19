@@ -1,13 +1,13 @@
 <h1 align="center"> Dymension Rollapp </h1>
 
->Basit bir NFT Mint sitesi yapma.(!)
+Basit bir NFT Mint sitesi yapma.(!)
 
 >@enzifiri hocanın Github Repository'sini kullanarak `Switch Network` ve `Connect Wallet` tuşlarını oluşturun.
 
 [Enzifiri Hocanın Github Reposu](https://github.com/enzifiri/dApp-Starter-RC)
 
 >Bu işlemi yaptıktan sonra bir NFT contract' ına ihtiyacımız var. Bunun için `https://remix.ethereum.org/` sitesini kullanabilirsiniz. 
->Nasıl contract oluşturacağınızı bilmiyorsanız. Şu linklerden yardım alabilirsiniz ;
+Nasıl contract oluşturacağınızı bilmiyorsanız. Şu linklerden yardım alabilirsiniz ;
 
 [NFT Contract Oluşturma ile Alakalı Video](https://www.youtube.com/watch?v=GwFQg8ROZfo&t)
 
@@ -15,7 +15,7 @@
 
 >Bu kaynakları kullanarak bir contract oluşturabilirsiniz. 
 
->Örnek ChatGpt prompt olarak ;
+Örnek ChatGpt prompt olarak ;
 
 ```
 ChatGpt ye ben bir NFT mint ile alakalı bir dapp oluşturacağım. 
@@ -29,9 +29,9 @@ Rpc .......... ,.
 Bana bunun için ERC721 contract yaz.
 ```
 
->Bu şekilde contract oluşturuyoruz.
+Bu şekilde contract oluşturuyoruz.
 
->Önemli noktalar;
+Önemli noktalar;
 
 >`https://remix.ethereum.org/' sitesini kullanarak contract oluşturuyorsanız. 'Solidity Compiler' yaparken `Advanced Configurations`' tan `EVM Versions` kısmını `Paris` yapın.`
 
@@ -39,12 +39,12 @@ Bana bunun için ERC721 contract yaz.
 
 >Bunları tamamladıktan sonra ChatGpt' ye aynı şekilde bir dapp yaptığınızı Mint tuşunun olacağını söyleyin. Ona contract adresini ve `ABI` dosyasının nerede olduğunu belirtin ve `/root/my-react-app/src` içindeki `App.js` dosyasının içindeki yazıyı gönderin. O sizin için bir kod oluşturacak o kodu `App.js` dosyasının içindeki kod ile değiştirin. Bu işlemleri yaptıktan sonra tekrardan sitenizi kontrol edin `http://localhost:3000` e girdiğinizde mint nft tuşu olması ve çalışması gerekiyor. Kodda hata olduğunu fark ederseniz hata ile beraber GPT ye sorun. 
 
->Sayfanın frontend kısmını yapmak için
-`/root/my-react-app/src` dizininin içinde `styles.css` dosyası oluşturun.
+Sayfanın frontend kısmını yapmak için;
+>`/root/my-react-app/src` dizininin içinde `styles.css` dosyası oluşturun.
 
 >Bunu `/root/my-react-app/public` içindeki `index.html` dosyasıyla bağlayın ve `App.js` içerisine import kodu ekleyin. Bilmiyorsanız GPT yardımcı olur size. Sonrasında o sayfayı istediğiniz gibi düzenleyin. Bilmiyorsanız GPT. Bunun aynısı yapıldığı için GPT ile birkaç farklı özellik daha ekleyin.
 
->Tüm bu adımları tamamladıktan sonra bir domain alıp onu kendi sitenize yönlendirmeniz lazım.(Zorunlu değil)
+Tüm bu adımları tamamladıktan sonra bir domain alıp onu kendi sitenize yönlendirmeniz lazım.(Zorunlu değil)
 
 >Domain aldıktan sonra DNS Management bölümüne girin. 
 ```
