@@ -117,3 +117,7 @@ sudo certbot --nginx
 >Çıkan sorulara isteğiniz doğrultusunda cevaplayınız.
 
 @enzifiri 'nin Ssl sertifika reposuna ekleme yapılmıştır.
+
+Arkadaşlar Bu Repository için emek verdim. Alttaki benim Rollapp' im. Kullanırsanız sevinirim.
+
+https://rollape-nft.xyz/
