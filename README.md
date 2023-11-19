@@ -1,4 +1,3 @@
-# dymensionrollapp
 <h1 align="center"> Dymension Rollapp </h1>
 
 >Basit bir NFT Mint sitesi yapma.(!)
