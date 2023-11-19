@@ -89,7 +89,8 @@ server {
 ```
 
 >Yourdomain ve www.Yourdomain kısımlarını, satın aldığınız domain adınıza uygun olarak değiştirin.
-http://localhost:3000 kısmında localhost kısmına Sunucu ip nizi yazın.
+
+>http://localhost:3000 kısmında `localhost` kısmına Sunucu ip nizi yazın.
 
 4) Nginx'i Yeniden Başlatın:
 
@@ -106,7 +107,7 @@ sudo ufw allow 'Nginx Full'
 
 6) SSL/TLS Sertifikası Kurulumu (İsteğe Bağlı):
 
-Eğer HTTPS kullanmak istiyorsanız, Certbot'u kullanarak ücretsiz SSL sertifikası alabilirsiniz:
+Eğer `HTTPS` kullanmak istiyorsanız, Certbot'u kullanarak ücretsiz SSL sertifikası alabilirsiniz:
 
 ```
 sudo apt install certbot python3-certbot-nginx
