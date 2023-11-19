@@ -33,7 +33,7 @@ Bu şekilde contract oluşturuyoruz.
 
 Önemli noktalar;
 
->`https://remix.ethereum.org/' sitesini kullanarak contract oluşturuyorsanız. 'Solidity Compiler' yaparken `Advanced Configurations`' tan `EVM Versions` kısmını `Paris` yapın.`
+>`https://remix.ethereum.org/` sitesini kullanarak contract oluşturuyorsanız. 'Solidity Compiler' yaparken `Advanced Configurations`' tan `EVM Versions` kısmını `Paris` yapın.
 
 >Sonrasında aynı şekilde  https://remix.ethereum.org/ sitesinde `Solidity Compiler` kısmından `ABI`' yı kopyalayın. Ardından `/root/my-react-app/src` klasöründe `MyNftContractABI.json` oluşturun ve içeriğine `ABI`' yı yapıstırın.
 
@@ -46,7 +46,7 @@ Sayfanın frontend kısmını yapmak için;
 
 Tüm bu adımları tamamladıktan sonra bir domain alıp onu kendi sitenize yönlendirmeniz lazım.(Zorunlu değil)
 
->Domain aldıktan sonra DNS Management bölümüne girin. 
+1) Domain aldıktan sonra DNS Management bölümüne girin. 
 ```
 Type: A  
 Name:@ 
@@ -54,4 +54,64 @@ Name:@
 Points to : SİZİNIPADRESİNİZ 
 ```
 
-Bu şekilde yönlendirmeyi yapmış oluyoruz sonrasında aşağıdaki işlemleri sırasıyla yapıyoruz.
+Bu şekilde yönlendirmeyi yapmış oluyoruz sonrasında aşağıdaki işlemleri sunucumuzda sırasıyla yapıyoruz.
+
+2) Nginx'i Yükleyin:
+
+```
+sudo apt update
+sudo apt install nginx
+```
+
+3) Nginx'i Yapılandırın:
+
+```
+sudo nano /etc/nginx/sites-available/default
+```
+
+>Dosyayı açtıktan sonra, şu şekilde düzenleyin:
+
+```
+server {
+    listen 80;
+    server_name Yourdomain www.Yourdomain;
+
+    location / {
+        proxy_pass http://localhost:3000;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+}
+```
+
+>Yourdomain ve www.Yourdomain kısımlarını, satın aldığınız domain adınıza uygun olarak değiştirin.
+http://localhost:3000 kısmında localhost kısmına Sunucu ip nizi yazın.
+
+4) Nginx'i Yeniden Başlatın:
+
+```
+sudo systemctl restart nginx
+```
+
+5) Güvenlik Duvarı Ayarlarını Yapın:
+Eğer güvenlik duvarı kullanıyorsanız, güvenlik duvarınızı Nginx'in trafiğini kabul edecek şekilde ayarlayın:
+
+```
+sudo ufw allow 'Nginx Full'
+```
+
+6) SSL/TLS Sertifikası Kurulumu (İsteğe Bağlı):
+
+Eğer HTTPS kullanmak istiyorsanız, Certbot'u kullanarak ücretsiz SSL sertifikası alabilirsiniz:
+
+```
+sudo apt install certbot python3-certbot-nginx
+sudo certbot --nginx
+```
+
+>Çıkan sorulara isteğiniz doğrultusunda cevaplayınız.
+
+@enzifiri 'nin Ssl sertifika reposuna ekleme yapılmıştır.
