@@ -1,11 +1,13 @@
 <h1 align="center"> Dymension Rollapp </h1>
 
 >Basit bir NFT Mint sitesi yapma.(!)
-@enzifiri hocanın Github Repository'sini kullanarak `Switch Network` ve `Connect Wallet` tuşlarını oluşturun.
+
+>@enzifiri hocanın Github Repository'sini kullanarak `Switch Network` ve `Connect Wallet` tuşlarını oluşturun.
 
 [Enzifiri Hocanın Github Reposu](https://github.com/enzifiri/dApp-Starter-RC)
 
->Bu işlemi yaptıktan sonra bir NFT contract' ına ihtiyacımız var. Bunun için `https://remix.ethereum.org/` sitesini kullanabilirsiniz. Nasıl contract oluşturacağınızı bilmiyorsanız. Şu linklerden yardım alabilirsiniz ;
+>Bu işlemi yaptıktan sonra bir NFT contract' ına ihtiyacımız var. Bunun için `https://remix.ethereum.org/` sitesini kullanabilirsiniz. 
+>Nasıl contract oluşturacağınızı bilmiyorsanız. Şu linklerden yardım alabilirsiniz ;
 
 [NFT Contract Oluşturma ile Alakalı Video](https://www.youtube.com/watch?v=GwFQg8ROZfo&t)
 
