@@ -120,4 +120,4 @@ sudo certbot --nginx
 
 Arkadaşlar Bu Repository için emek verdim. Alttaki benim Rollapp' im. Kullanırsanız sevinirim.
 
-https://rollape-nft.xyz/
+https://www.nbc-ecosystem.xyz/
